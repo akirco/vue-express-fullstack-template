@@ -1,0 +1,32 @@
+{
+  "version": "0.1.0",
+  "name": "@fakebot/server",
+  "scripts": {
+    "dev": "tsup src/index.ts --watch --onSuccess \"node ./build/index.js\"",
+    "build": "pnpm run clean && tsup",
+    "build:run": "pnpm run build && node ./build/index.js",
+    "clean": "del build",
+    "format": "prettier ./src/ --write",
+    "lint": "eslint . --ext .ts --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-fetch": "^3.1.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.15.0",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "del": "^7.0.0",
+    "eslint": "^8.36.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.4",
+    "tsup": "^6.6.3",
+    "typescript": "^4.9.5"
+  }
+}

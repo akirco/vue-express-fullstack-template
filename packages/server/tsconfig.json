@@ -1,0 +1,43 @@
+/**
+ * Intro to the TSConfig Reference:
+ *  https://www.typescriptlang.org/tsconfig
+ */
+{
+  "compilerOptions": {
+    /**
+     * ES Module support
+     */
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "node",
+    "declaration": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": ["ESNext"],
+    "baseUrl": ".",
+    "outDir": "build",
+    "strict": false,
+    "importHelpers": true,
+    "isolatedModules": true,
+    "importsNotUsedAsValues": "error",
+    "noEmitOnError": true,
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noUncheckedIndexedAccess": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noFallthroughCasesInSwitch": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "noUnusedParameters": true,
+    "noImplicitThis": true,
+    "forceConsistentCasingInFileNames": true,
+    "pretty": true
+  },
+
+  "exclude": ["node_modules/", "build/"],
+  "include": ["src"]
+}

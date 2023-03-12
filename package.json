@@ -1,0 +1,15 @@
+{
+  "name": "fakebot",
+  "private:": true,
+  "scripts": {
+    "vue:dev": "pnpm run --filter ./packages/client dev",
+    "express:dev": "pnpm run --filter ./packages/server dev",
+    "build": "pnpm recursive exec pnpm build",
+    "outdated": "pnpm recursive outdated",
+    "update": "pnpm recursive update --latest"
+  },
+  "devDependencies": {
+    "@fakebot/client": "workspace:^0.1.0",
+    "@fakebot/server": "workspace:^0.1.0"
+  }
+}
