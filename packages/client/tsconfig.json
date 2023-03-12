@@ -1,9 +1,4 @@
 {
-  "references": [
-    {
-      "path": "./tsconfig.vite.json"
-    }
-  ],
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",

@@ -1,9 +1,0 @@
-{
-  "exclude": [],
-  "compilerOptions": {
-    "composite": true,
-    "module": "ESNext",
-    "types": ["node", "jsdom"]
-  },
-  "include": ["./vitest.config.ts", "./vite.config.ts"]
-}
