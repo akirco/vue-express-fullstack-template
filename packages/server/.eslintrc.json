@@ -17,6 +17,6 @@
     "linebreak-style": ["error", "windows"],
     "quotes": ["error", "single"],
     "semi": ["error", "never"],
-    "no-non-null-assertion": false
+    "no-non-null-assertion": 0
   }
 }
